@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+.container .temporizador {
+    font-size: 7rem;
+    color: #32b6e4;
+    background: url('../assets/cronometro.png');
+    background-size: cover;
+    width: 40vw;
+    height: 87vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .temporizador .contentDatos {
+    background-color: black;
+    border-radius: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
