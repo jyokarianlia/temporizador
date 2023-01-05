@@ -1,7 +1,7 @@
 .container {
     display: flex;
     width: 100%;
-    background-color: black;
+    height: 91vh;
 }
 .container .temporizador {
     font-size: 7rem;
@@ -14,11 +14,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 1rem;
 }
 .container .temporizador .contentDatos {
     background-color: black;
     border-radius: 50%;
     height: 80%;
+    width: 80%;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.container .config {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 2rem;
+    padding:  0 10rem;
+}
+.container .config .tiempo {
+    width: 100%;
+    color: white;
+}
+.container .config .tiempo input {
+    width: 100%;
+    margin: .5rem 0 1.5rem 0;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+}
+.container .config .controles {
+    display: flex;
+    gap: 1rem;
+}
+.container .config .controles button {
+    background: linear-gradient(0deg, rgb(122, 219, 214),rgb(6, 6, 112));
+    border-radius: .5rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: .5rem 1.3rem;
+    transition: all ease-in-out .3s;
+}
+.container .config .controles button:hover {
+    background: linear-gradient(10deg, rgb(122, 219, 214),rgb(6, 6, 112));
+    cursor: pointer;
 }
