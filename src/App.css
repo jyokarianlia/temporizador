@@ -1,0 +1,18 @@
+.App .menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.App .menu label {
+    padding: 0 .4rem;
+    border-bottom: 2px solid white;
+    transition: all ease-in-out .4s;
+}
+.App .menu label:hover {
+    border-color:  rgb(33, 33, 198);
+    cursor: pointer;
+}
+.App .menu .labelSeleccionado {
+    border-color: rgb(33, 33, 198);
+}

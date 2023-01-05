@@ -1,8 +1,9 @@
-const Temporizador = () => {
+import reloj from './assets/cronometro.png'
 
+const Temporizador = () => {
     return (
-        <div>
-            
+        <div className='container'>
+            <div className="temporizador"></div>
         </div>
     )
 }

@@ -1,12 +1,21 @@
+import { useState } from 'react'
 
 import './App.css'
 import Cronometro from './Cronometro'
+import Temporizador from './Temporizador'
 
 function App() {
 
+  const [ seleccion , setSeleccion ] = useState( '' )
+
   return (
     <div className="App">
-      <Cronometro />
+      <div className="menu">
+        <label onClick={ () => setSeleccion( 'crono' ) }>Cronometro</label>
+        <label onClick={ () => setSeleccion( 'tempo' ) }>Temporizador</label>
+      </div>
+      { seleccion == 'crono' && <Cronometro /> }
+      { seleccion == 'tempo' && <Temporizador /> }
     </div>
   )
 }
